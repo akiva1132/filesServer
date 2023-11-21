@@ -5,7 +5,7 @@ import path from "path"
 const app = express()
 
 
-app.use('/',express.static(path.join(__dirname, 'public')))
+app.use('/file',express.static(path.join(__dirname, 'public')))
 app.get('/a',((req,res) => {
     res.send('aaa')
 }))

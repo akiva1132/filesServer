@@ -6,7 +6,7 @@ import path from 'path';
 const app = express()
 
 
-app.use('/accessories',express.static(path.join(__dirname, './accessories')))
+app.use('/accessories',express.static(path.join(__dirname, '')))
 app.get('/a',((req,res) => {
     res.send('aaa')
 }))
